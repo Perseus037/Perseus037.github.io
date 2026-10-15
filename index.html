@@ -9,8 +9,9 @@
   <meta property="og:description" content="MPhil in Artificial Intelligence at HKUST(GZ). Agent memory · Multimodal reasoning · Efficient LLM inference.">
   <title>Zhicheng Zheng | Academic Homepage</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('homepage-theme')==='dark'?'dark':'light'}catch{}</script>
+  <link rel="stylesheet" href="./style.css?v=theme1">
+  <script src="./script.js?v=theme1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-en="Skip to content" data-zh="跳转到正文">Skip to content</a>
@@ -21,9 +22,15 @@
         <a href="#about" class="active" data-en="About" data-zh="关于我">About</a>
         <a href="#research" data-en="Research" data-zh="研究兴趣">Research</a>
         <a href="#education" data-en="Education" data-zh="教育背景">Education</a>
-        <a href="#publications" data-en="Publications" data-zh="论文">Publications</a>
+        <a href="#publications" data-en="Publications" data-zh="学术成果">Publications</a>
       </nav>
+      <div class="nav-controls">
       <button class="language" id="language" type="button" aria-label="切换至中文">中文 <span aria-hidden="true">↗</span></button>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></svg>
+          <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+        </button>
+      </div>
     </div>
   </header>
   <div class="layout">
@@ -67,7 +74,7 @@
         <div class="education-row" style="border-top:1px solid var(--line);margin-top:12px;padding-top:20px"><div class="university-mark" aria-hidden="true">DUT</div><div class="education-copy"><h3 data-en="Dalian University of Technology" data-zh="大连理工大学">Dalian University of Technology</h3><p data-en="Bachelor of Mechanical Engineering" data-zh="机械工程及其自动化学士">Bachelor of Mechanical Engineering</p><span class="location" data-en="2022–2026 · Dalian, China" data-zh="2022–2026 · 中国大连">2022–2026 · Dalian, China</span></div></div>
       </section>
       <section id="publications" class="section">
-        <div class="section-heading"><h2 data-en="Publications" data-zh="论文">Publications</h2><span class="section-index">03</span></div>
+        <div class="section-heading"><h2 data-en="Publications" data-zh="学术成果">Publications</h2><span class="section-index">03</span></div>
         <div class="publication-list"></div>
       </section>
       <footer><span>© <span id="year">2026</span> Zhicheng Zheng</span><a href="#about" data-en="Back to top ↑" data-zh="返回顶部 ↑">Back to top ↑</a></footer>

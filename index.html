@@ -12,6 +12,7 @@
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('homepage-theme')==='dark'?'dark':'light'}catch{}</script>
   <link rel="stylesheet" href="./style.css?v=theme1">
   <script src="./script.js?v=theme1" defer></script>
+<style>.publication-card{display:grid;grid-template-columns:210px minmax(0,1fr);gap:28px;align-items:start;padding:6px 0 20px}.publication-image{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff;box-shadow:0 5px 18px rgba(0,0,0,.12)}.publication-copy h3{margin:0 0 10px;font-family:var(--serif);font-size:20px;line-height:1.45;color:var(--blue)}.publication-authors{margin:0 0 8px;line-height:1.7}.publication-status{margin:0 0 12px;font-style:italic;color:var(--muted);font-size:13px}.publication-links{margin:0;font-weight:600;font-size:16px}@media(max-width:850px){.publication-card{grid-template-columns:165px minmax(0,1fr);gap:20px}}@media(max-width:650px){.publication-card{grid-template-columns:1fr;gap:20px}.publication-image{max-width:300px}.publication-copy h3{font-size:19px}}</style>
 </head>
 <body>
   <a class="skip-link" href="#main" data-en="Skip to content" data-zh="跳转到正文">Skip to content</a>
@@ -36,7 +37,8 @@
   <div class="layout">
     <aside class="profile" aria-label="Profile">
       <img class="avatar" src="./avatar.png" width="176" height="176" alt="Avatar of Zhicheng Zheng: a plush character wearing glasses">
-      <h1 data-en="Zhicheng Zheng" data-zh="郑治成">Zhicheng Zheng</h1>      <p class="position" data-en="MPhil Student" data-zh="研究型硕士（MPhil）">MPhil Student</p>
+      <h1 data-en="Zhicheng Zheng" data-zh="郑治成">Zhicheng Zheng</h1>
+      <p class="position" data-en="MPhil Student" data-zh="研究型硕士（MPhil）">MPhil Student</p>
       <p class="discipline" data-en="Artificial Intelligence" data-zh="人工智能">Artificial Intelligence</p>
       <a class="affiliation" href="https://www.hkust-gz.edu.cn/" target="_blank" rel="noopener noreferrer">HKUST(GZ) <span aria-hidden="true">↗</span></a>
       <div class="sidebar-rule"></div>
@@ -73,7 +75,7 @@
       </section>
       <section id="publications" class="section">
         <div class="section-heading"><h2 data-en="Publications" data-zh="学术成果">Publications</h2><span class="section-index">03</span></div>
-        <div class="publication-list"></div>
+        <div class="publication-list"><article class="publication-card" aria-labelledby="memcut-title"><img class="publication-image" src="https://arxiv.org/html/2610.21405v1/fig_teaser.png" alt="MemCut: a deleted secret remains recoverable from surviving memory evidence" loading="lazy"><div class="publication-copy"><h3 id="memcut-title">MemCut: Every Secret Leaves a Trail in the Long-Term Memory of LLM Agents</h3><p class="publication-authors">Cheng Zhang, Xuanning Cao, <strong>Zhicheng Zheng</strong>, Hui Xiong</p><p class="publication-status" data-en="Submitted to ACL ARR · October 2026" data-zh="已投稿 ACL ARR · 2026 年 10 月">Submitted to ACL ARR · October 2026</p><p class="publication-links"><a href="https://arxiv.org/abs/2610.21405" target="_blank" rel="noopener noreferrer">[arXiv]</a></p></div></article></div>
       </section>
       <footer><span>© <span id="year">2026</span> <span data-en="Zhicheng Zheng" data-zh="郑治成">Zhicheng Zheng</span></span><a href="#about" data-en="Back to top ↑" data-zh="返回顶部 ↑">Back to top ↑</a></footer>
     </main>

@@ -56,3 +56,10 @@ body{background:var(--page)}
 body,.masthead,blockquote,.research-icon,.university-mark,.language{transition:background-color .45s ease,color .35s ease,border-color .35s ease}
 h2,h3,a,p{transition:color .35s ease}
 @media(prefers-reduced-motion:reduce){.theme-sky *,.theme-sky,.theme-orb::before,body,.masthead,blockquote,.research-icon,.university-mark,.language,h2,h3,a,p{transition:none!important}}
+
+/* Readable supporting text across desktop and mobile. */
+.section-lead,.research-row p,.education-copy p{font-size:14px;color:#596b7a}
+.profile-links,.location,.handle,.profile-summary{font-size:13px;color:#596b7a}
+.profile-links a{color:#465b6b}
+@media(max-width:650px){.position,.discipline,.affiliation{font-size:13px}}
+[data-theme=dark] .section-lead,[data-theme=dark] .research-row p,[data-theme=dark] .location,[data-theme=dark] .handle,[data-theme=dark] .profile-summary{color:#b4bac4}
